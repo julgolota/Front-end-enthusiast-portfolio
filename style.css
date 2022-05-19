@@ -5,14 +5,14 @@
 }
 
 body {
-  margin-top: 100px;
+  margin: 100px 0;
 }
 
 h1,
 h2,
 h3 {
-  text-align: center;
   margin: 0;
+  text-align: center;
 }
 
 h1 {
@@ -29,7 +29,6 @@ h3 {
 }
 
 p {
-  display: block;
   font-size: 18px;
   line-height: 1.5;
 }
@@ -42,27 +41,27 @@ p {
 
 .navigation-links a {
   margin: 20px;
+}
+
+.primary-link {
   border-radius: 4px;
   padding: 20px 15px;
   text-decoration: none;
   text-transform: capitalize;
-}
-
-.contact-link,
-.primary-link {
   background: var(--primary-color);
   box-shadow: var(--box-shadow);
   color: white;
 }
 
-.primary-link {
+.primary-link:hover {
+  color: white;
+}
+
+.secondary-link {
   border-radius: 4px;
   padding: 20px 15px;
   text-decoration: none;
   text-transform: capitalize;
-}
-
-.about-link {
   color: var(--primary-color);
   border: 1px solid var(--primary-color);
 }
@@ -93,29 +92,24 @@ p {
   text-decoration: underline;
 }
 
-.mb-3 {
-  text-align: left;
-}
-
 @media (max-width: 576px) {
   h1 {
     font-size: 48px;
     line-height: 1.5;
   }
+
   h2 {
     font-size: 32px;
     text-align: center;
   }
-  .col-sm-6 {
+
+  p {
     text-align: center;
   }
-  .mb-3 {
+
+  .project-link {
+    display: block;
     text-align: center;
-  }
-  .primary-link {
-    padding: 20px 180px;
-  }
-  .mt-5 {
-    margin-top: 3rem !important;
+    margin: 0 20px;
   }
 }
